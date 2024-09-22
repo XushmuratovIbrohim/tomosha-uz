@@ -4,7 +4,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
-import { Movie } from "@types/movies";
+import type { Movie } from "../../../types/movies";
 import axios from "@utils/configs/axios";
 
 import "./swiper.scss";
