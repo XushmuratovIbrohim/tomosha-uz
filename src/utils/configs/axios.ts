@@ -1,11 +1,10 @@
 import axios, { AxiosInstance, AxiosResponse } from 'axios';
 
 const instance: AxiosInstance = axios.create({
-  baseURL: 'https://imovi.uz/api',
+  baseURL: 'https://www.imovi.uz/api',
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',
-    'Accept-Language': 'uz',
   },
 });
 
@@ -16,7 +15,7 @@ instance.interceptors.request.use(
 
 instance.interceptors.response.use(
   (response: AxiosResponse) => response.data,
-  (error) => Promise.reject(error.response.data),
+  (error) => Promise.reject(error),
 );
 
 export default instance;
