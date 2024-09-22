@@ -1,0 +1,22 @@
+.swiper {
+  @apply h-[550px] w-full bg-red-900 rounded-[10px];
+  .swiper-wrapper {
+    .swiper-slide {
+      @apply w-full h-full relative;
+      img {
+        @apply object-fill;
+      }
+      h3 {
+        @apply z-10 absolute bottom-[100px] left-[20px] text-[20px] text-white-700 font-bold;
+      }
+      p {
+        @apply z-10 absolute bottom-[70px] left-[20px] text-[16px] text-white-700;
+      }
+    }
+  }
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      @apply bg-primary-800 w-[120px] h-[2px] rounded-none;
+    }
+  }
+}
