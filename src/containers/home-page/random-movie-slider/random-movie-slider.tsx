@@ -15,7 +15,7 @@ export function RandomMovieSlider() {
   const [movies, setMovies] = useState<Movie[]>([]);
 
   useEffect(() => {
-    axios.get<Movie[]>("/movies/random").then((data) => {
+    axios.get<Movie[], Movie[]>("/movies/random").then((data) => {
       setMovies(data);
     });
   }, []);
