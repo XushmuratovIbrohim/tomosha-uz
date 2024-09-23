@@ -1,0 +1,10 @@
+.wrapper {
+  @apply mb-[32px];
+  .title {
+    @apply block mb-[24px] text-[36px] text-white-900 font-[600] leading-[44px];
+  }
+
+  .list {
+    @apply flex gap-[12px];
+  }
+}

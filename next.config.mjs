@@ -32,6 +32,16 @@ const nextConfig = {
         hostname: "fonoteka.top",
         pathname: "**",
       },
+      {
+        protocol: "https",
+        hostname: "avatars.mds.yandex.net",
+        pathname: "**",
+      },
+      {
+        protocol: "https",
+        hostname: "musicart.xboxlive.com",
+        pathname: "**",
+      }
     ],
   }
 };

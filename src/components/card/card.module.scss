@@ -1,0 +1,18 @@
+.card {
+  &.vertical {
+    @apply w-[221px];
+    .img {
+      @apply w-full h-[309px] mb-[12px];
+      img {
+        @apply w-full h-full rounded-[10px];
+      }
+    }
+  }
+
+  .title {
+    @apply text-[20px] text-white-900 font-[700] leading-[24px];
+  }
+  .description {
+    @apply text-[16px] text-white-700 font-[400] leading-[22px];
+  }
+}

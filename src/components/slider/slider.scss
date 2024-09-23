@@ -1,5 +1,5 @@
 .swiper {
-  @apply h-[550px] w-full bg-red-900 rounded-[10px];
+  @apply h-[550px] w-full rounded-[10px] bg-black bg-opacity-70 mb-[70px];
   .swiper-wrapper {
     .swiper-slide {
       @apply w-full h-full relative;
