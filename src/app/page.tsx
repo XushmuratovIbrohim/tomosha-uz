@@ -5,13 +5,17 @@ import CardList from "@components/card-list/card-list";
 import { getMovies, getMoviesByGenre } from "@/actions";
 import { Genres } from "@/utils/constants/genres";
 
+import "react-loading-skeleton/dist/skeleton.css";
+
 const RandomMovieSlider = dynamic(
   () =>
     import(
       "@containers/home-page/random-movie-slider/random-movie-slider"
     ).then((m) => m.RandomMovieSlider),
   {
-    loading: () => <SliderSkeleton />,
+    loading: () => (
+      <SliderSkeleton />
+    ),
   }
 );
 
@@ -41,7 +45,7 @@ export default async function Home() {
       <CardList title='Trillerlar' data={triller} />
       <CardList title='Fantastika Filmlar' data={fantastic} />
       <CardList title='Sarguzasht Filmlar' data={adventures} />
-      <CardList title='Jangari Filmlar' data={hitman} />  
+      <CardList title='Jangari Filmlar' data={hitman} />
     </>
   );
 }

@@ -16,10 +16,9 @@ export async function RandomMovieSlider() {
 export const SliderSkeleton = () => (
   <Skeleton
     count={1}
-    height="550"
-    width="1312"
-    className='rounded-[10px] mb-[70px]'
-    baseColor='#fff'
-    highlightColor='#292929'
+    height='768px'
+    className='mb-[70px] rounded-[150px]'
+    baseColor='#292929'
+    highlightColor='#5555'
   />
 );
